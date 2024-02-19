@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import Matter, { Mouse, MouseConstraint } from "matter-js";
+import Matter, { Mouse, MouseConstraint, Runner } from "matter-js";
 
 const STATIC_DENSITY = 15;
-const PARTICLE_SIZE = 24;
+const PARTICLE_SIZE = 28;
 const PARTICLE_BOUNCYNESS = 0.9;
 
 export const MatterScene = ({
@@ -77,7 +77,7 @@ export const MatterScene = ({
 
 		World.add(engine.world, [mouseConstraint, floor, leftWall, rightWall]);
 
-		Engine.run(engine);
+		Runner.run(engine);
 		Render?.run(render);
 
 		// @ts-ignore
@@ -111,7 +111,7 @@ export const MatterScene = ({
 							// },
 							fillStyle: "white",
 							strokeStyle: "black",
-							lineWidth: 1,
+							lineWidth: 2,
 						},
 					})
 				);
