@@ -1,6 +1,7 @@
 "use client";
 
 import { MatterScene } from "@/components/MatterScene";
+import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -13,20 +14,18 @@ export default function Home() {
 
 	return (
 		<>
-			<div className="fixed end-0 p-2 z-[99999999999] hidden md:flex items-center">
+			<div className="md:fixed md:end-0 p-2 z-[99999999999] relative flex mx-auto w-fit items-center">
 				<Button variant={"link"}>
 					<a href="https://npitt.dev" target="_blank" rel="noopener noreferrer">
 						made with ❤️ by Noah Pittman
 					</a>
 				</Button>
+				<div className="">
+					<ModeToggle />
+				</div>
 			</div>
 
 			<div className="flex-col flex relative pt-2 w-full justify-center z-10">
-				<Button variant={"link"} className="md:hidden">
-					<a href="https://npitt.dev" target="_blank" rel="noopener noreferrer">
-						made with ❤️ by Noah Pittman
-					</a>
-				</Button>
 				<Button className="w-fit mx-auto" onClick={handleAddBall}>
 					Add Ball
 				</Button>
