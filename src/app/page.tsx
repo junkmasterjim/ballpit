@@ -31,7 +31,7 @@ export default function Home() {
 					Add Ball
 				</Button>
 			</div>
-			<div className="fixed inset-0  mx-auto">
+			<div className="fixed inset-0 p-2  mx-auto">
 				<MatterScene particleTrigger={addBall} />
 			</div>
 		</>

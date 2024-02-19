@@ -102,13 +102,8 @@ export const MatterScene = ({
 					scene.engine.world,
 					Matter.Bodies.circle(randomX, -PARTICLE_SIZE, PARTICLE_SIZE, {
 						restitution: PARTICLE_BOUNCYNESS,
-
+						inertia: Infinity,
 						render: {
-							// sprite: {
-							// 	texture: "/vercel.svg",
-							// 	xScale: 0.5,
-							// 	yScale: 0.5,
-							// },
 							fillStyle: "white",
 							strokeStyle: "black",
 							lineWidth: 2,
@@ -180,7 +175,7 @@ export const MatterScene = ({
 	return (
 		<div
 			ref={boxRef}
-			className="relative border-b-2 overflow-hidden w-full h-full"
+			className="relative border-b-2 border-r-2 border-l-2 overflow-hidden w-full h-full"
 		>
 			<canvas id="ballPit" ref={canvasRef} className="h-full w-full absolute" />
 		</div>
