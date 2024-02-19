@@ -27,7 +27,7 @@ export default function Home() {
 
 			<div className="flex-col flex relative pt-2 w-full justify-center z-10">
 				<Button className="w-fit mx-auto" onClick={handleAddBall}>
-					Add Ball
+					Ball Me
 				</Button>
 			</div>
 			<div className="fixed inset-0 p-2  mx-auto">

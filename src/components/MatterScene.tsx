@@ -95,7 +95,7 @@ export const MatterScene = ({
 	/*eslint-disable */
 	useEffect(() => {
 		if (scene) {
-			for (let i = 0; i < 2; i++) {
+			for (let i = 0; i < 1; i++) {
 				let { width, height } = constraints;
 				let randomX = Math.floor(Math.random() * -width) + width;
 				Matter.World.add(
