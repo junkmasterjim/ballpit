@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Matter, { Mouse, MouseConstraint } from "matter-js";
 
 const STATIC_DENSITY = 15;
-const PARTICLE_SIZE = 64;
+const PARTICLE_SIZE = 24;
 const PARTICLE_BOUNCYNESS = 0.9;
 
 export const MatterScene = ({
@@ -104,11 +104,11 @@ export const MatterScene = ({
 						restitution: PARTICLE_BOUNCYNESS,
 
 						render: {
-							sprite: {
-								texture: "/vercel.svg",
-								xScale: 0.5,
-								yScale: 0.5,
-							},
+							// sprite: {
+							// 	texture: "/vercel.svg",
+							// 	xScale: 0.5,
+							// 	yScale: 0.5,
+							// },
 							fillStyle: "white",
 							strokeStyle: "black",
 							lineWidth: 1,
