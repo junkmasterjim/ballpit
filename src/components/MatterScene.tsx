@@ -175,7 +175,7 @@ export const MatterScene = ({
 	return (
 		<div
 			ref={boxRef}
-			className="relative border-b-2 border-r-2 border-l-2 overflow-hidden w-full h-full"
+			className="absolute inset-0 border-b-2 border-r-2 border-l-2 overflow-hidden w-full h-full"
 		>
 			<canvas id="ballPit" ref={canvasRef} className="h-full w-full absolute" />
 		</div>
